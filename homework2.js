@@ -41,9 +41,43 @@ let average = (number1 + number2 + number3 + number4 + number5)/5;
 let number1 = +prompt ("Enter a number");
 let number2 = +prompt ("Enter a number");
 let number3 = +prompt ("Enter a number");
- if (numbe1 >= number2 $$ number1 >= number3 && number2 >= number3) {
-    console.log(number1,number2,number3)
-}
+ if (number1 <= number2 && number1 <= number3) {
+     if(number2 <= number3){
+         console.log(number1, number2, number3) 
+     }else{
+          console.log(number1, number3, number2)
+     }
+  }else if( number2 <= number1 && number2 <= number3){
+       if(number1 <= number3){
+           console.log(number2, number1, number3) 
+       }else{
+           console.log(number2, number3, number1)
+       }
+  }else if( number2 <= number1 && number2 <= number3){
+       if(number1 <= number3){
+           console.log(number2, number1, number3) 
+       }else{
+           console.log(number2, number3, number1)
+           }
+   }else if( number3 <= number1 && number3 <= number2){
+       if(number1 <= number2){
+           console.log(number3, number1, number2) 
+       }else{
+           console.log(number3, number2, number1)
+       }
+  }
+// task5
+// Given the following code rewrite it using only two if operators. (Hint: use logical
+// operators).
 
+let n = +prompt("Enter a number");
+let i = 0;
+let j = 0;
+    if (n % 2 === 0 && !Math.floor( n / 10 )){
+        i += 1;
+    }
+    if ( n % 3 === 0  && n % 10 === 1){
+        j += 1;
+    }
 
 
