@@ -14,7 +14,7 @@ let number =+prompt ("Enter a number");
 
 let number = +prompt ("Enter a number");
 let newNumber;
-    if (number > 0 && number === Math.floor(number) ){
+    if (number > 0 && number === Math.trunc(number) ){
         if (number % 10 === 0 || number % 10 === number ) {
             console.log(number);
         }else{
